@@ -20,7 +20,7 @@ public class Main {
     }
 
     static void trianglePerimeter() {
-        double aSide=13.4;
+        double aSide=23.4;
         double bSide=4.9;
         double cSide=15.1;
         double P=aSide+bSide+cSide;
