@@ -13,12 +13,13 @@ public class ListLoop1 {
         for (i = 0; i <= list1.length - 1; i++) {
             int residue = list1[i] % 5;
             if (residue == 0) {
-                list2[j] = list1[i];
-                j++;
-                 if (list2[j-1] > 150) {
+                if (list1[i] > 150) {
                     break;
                     //180 will go into the new array, but it will break the For, hence 200 will not go thru the for?
                 }
+                list2[j] = list1[i];
+                j++;
+
             }
         }
         //should convert the array in list,as I need only show not 0 values?
