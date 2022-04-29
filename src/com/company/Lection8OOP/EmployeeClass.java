@@ -4,9 +4,15 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public  class EmployeeClass {
-    final static int id=500230;
-    final static String  firstName = "David", lastName="Johnson";
+     final int id;
+     final String  firstName , lastName;
     private double salaryPerMonth;
+
+    public EmployeeClass(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     String getName(){
         return (firstName+ " "+ lastName );
@@ -47,17 +53,22 @@ public  class EmployeeClass {
 //        return ("This employee is: " + firstName + " "+ lastName + "with id: " + identification +". The employee salary is: "+ s);
 //    }
 
+    public String toString(){
+        return " bbb  (\"This employee is: \" + firstName + \" \"+ lastName + \"with id: \" + identification +\". The employee salary is: \"+ 4556);";
+    }
+
     public static void main(String[] args) {
-        EmployeeClass myEmployee=new EmployeeClass();
-        System.out.println(myEmployee.getName());
+        EmployeeClass myEmployee=new EmployeeClass(5023, "David", "Smith");
 
-        System.out.println("The Employee annual salary is: " + myEmployee.getAnnualSalary(450));
+        //System.out.println(myEmployee.getName());
 
-        System.out.println("test with generated getter for annual salary: " + myEmployee.getSalaryPerMonth(300.0) );
+        //System.out.println("The Employee annual salary is: " + myEmployee.getAnnualSalary(450));
 
-        System.out.println("Your salary got raised to: " + myEmployee.raiseSalary(300));
+        //System.out.println("test with generated getter for annual salary: " + myEmployee.getSalaryPerMonth(300.0) );
 
-        //System.out.println(myEmployee.toString(David, Johnson, 500230, 300));
+        //System.out.println("Your salary got raised to: " + myEmployee.raiseSalary(300));
+
+        //System.out.println(myEmployee.toStringCustom(David, Johnson, 500230, 300));
     }
 
 

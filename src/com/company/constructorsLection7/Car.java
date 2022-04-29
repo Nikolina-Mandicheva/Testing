@@ -30,6 +30,16 @@ public class Car {
 
     }
 
+
+
+    Car(int releaseYear) {
+        this("Suzuki", "white", 120,releaseYear);
+        //This always first - constructor calla another constructor - some code here
+
+    }
+
+
+
     Car(String name, int horsePower, int releaseYear, boolean secondHand) {
         colour = "n/a";
         this.name = name;
@@ -47,13 +57,9 @@ public class Car {
         this.secondHand = false;
     }
 
-    Car(int releaseYear) {
-        this("Suzuki", "white", releaseYear, 120);
-        //This always first - constructor calla another constructor - some code here
-
-    }
-
     public static void main(String[] args) {
+        Car myTestCar= new Car(2015);
+
         Car myCarObj = new Car("name", 101, 200, true);
         Car myCarObjBlank = new Car();
         Car myCarObj1 = new Car(2010);
