@@ -186,23 +186,27 @@ public class PersonMain {
     }
 
     public static void main(String[] args) {
-        PersonMain person1 = new PersonMain("Nikolina", "Orthodox", "BG", "Bulgarian", " ", "Bulgaria");
-         PersonMain person2 = new PersonMain("Nikki",  "Islam", "Bulgarian", "Bulgarian", "QA", "Italy");
-         System.out.println(person1.sayHello());
-        System.out.println("Does the Person Celebrate Easter? " + person2.celebrateEaster());
-         System.out.println("Is this person adult? " + person2.isAdult());
-       System.out.println("Is allowed taking a loan? " + person1.canTakeALoan());
+//        PersonMain person1 = new PersonMain("Nikolina", "Orthodox", "BG", "Bulgarian", " ", "Bulgaria");
+//         PersonMain person2 = new PersonMain("Nikki",  "Islam", "Bulgarian", "Bulgarian", "QA", "Italy");
+//         System.out.println(person1.sayHello());
+//        System.out.println("Does the Person Celebrate Easter? " + person2.celebrateEaster());
+//         System.out.println("Is this person adult? " + person2.isAdult());
+//       System.out.println("Is allowed taking a loan? " + person1.canTakeALoan());
+//
+//
+//        ClassAmerican americanPerson=new ClassAmerican("Nikol", "Orthodox", "Driver");
+//        System.out.println(americanPerson.sayHello());
+//        System.out.println("Are you considered as adult? " + americanPerson.isAdult());
+//        System.out.println("Do you celebrate Easter? " + americanPerson.celebrateEaster());
+//        americanPerson.celebrateMemorialDay();
+//
+//        ClassChildIsASubclass child1=new ClassChildIsASubclass("Darcy", "Catholic", "Italian", "Italian", "Italy");
+//        System.out.println(child1.getAge());
+//        System.out.println(child1.addSex());
+//        System.out.println("Is allowed taking a loan? " +child1.canTakeALoan());
 
+        ClassItalianChild italianPerson1 = new ClassItalianChild("Leonardo", "Catholic", "Pizza Master Chef");
+        System.out.println(italianPerson1.sayHello());
 
-        ClassAmerican americanPerson=new ClassAmerican("Nikol", "Orthodox", "Driver");
-        System.out.println(americanPerson.sayHello());
-        System.out.println("Are you considered as adult? " + americanPerson.isAdult());
-        System.out.println("Do you celebrate Easter? " + americanPerson.celebrateEaster());
-        americanPerson.celebrateMemorialDay();
-
-        ClassChildIsASubclass child1=new ClassChildIsASubclass("Darcy", "Catholic", "Italian", "Italian", "Italy");
-        System.out.println(child1.getAge());
-        System.out.println(child1.addSex());
-        System.out.println("Is allowed taking a loan? " +child1.canTakeALoan());
     }
 }
