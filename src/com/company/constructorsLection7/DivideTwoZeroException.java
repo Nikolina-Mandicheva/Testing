@@ -1,5 +1,7 @@
 package com.company.constructorsLection7;
 
+import com.sun.nio.sctp.IllegalReceiveException;
+
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -10,40 +12,30 @@ public class DivideTwoZeroException {
         Scanner myInput = new Scanner(System.in);
         int x, y;
 
-        System.out.println("Enter X ");
 
-//        try
-//        {
-//            y = my.nextInt();
-//        }
-//        catch (InputMismatchException e)
-//        {
-//            System.out.println("You have to enter a number.");
-//        }
+            System.out.println("Enter X ");
+            if (myInput.hasNextInt()) {
+                x = myInput.nextInt();
+            } else {
+                throw new IllegalArgumentException("Enter a valid number for X");
 
+            }
 
-//        if (myInput.hasNextInt()) {
-//
-//            x = myInput.nextInt();
-//
-//            // y = myInput.nextInt();
-//
-//           // System.out.println("X/Y: " + x / y);
-//        } else {
-//            throw new IllegalArgumentException("Input must be an int value");
-//        }
+            System.out.println("Enter Y ");
+            if (myInput.hasNextInt()) {
+                y = myInput.nextInt();
+            } else {
+                throw new IllegalArgumentException("Enter a valid number for Y");
+            }
 
 
-//        try {
-//            System.out.println("X/Y= " + x / y);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.out.println("Invalid value of Y=0 - /0 not allowed");
-//        }
-
+            if (y != 0) {
+                System.out.println("X/Y= " + x / y);
+            }
+            else {
+            throw new IllegalArgumentException("Y Input must be different than 0");
+        }
+        }
 
     }
-
-}
-
 

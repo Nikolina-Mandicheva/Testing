@@ -15,10 +15,15 @@ public class NestedExceptions {
     public static void main(String[] args) {
         try {
             System.out.println("hello");
-            notTrow();
+            //notTrow();
+            throw new IllegalArgumentException("This is not valid value");
         } catch (ArithmeticException e) {
             System.out.println("Caught!");
             e.printStackTrace();
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("I got you and failed silently");
+//            e.printStackTrace();
         }
         finally{
             System.out.println("Finally");
