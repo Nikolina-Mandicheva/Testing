@@ -126,7 +126,7 @@ public class PersonMain {
         switch (religion) {
             case "Orthodox":
             case "Catholic":
-                celebrateEaster = "Yes";
+                celebrateEaster = "Yes, I am";
                 break;
             case "Islam":
                 celebrateEaster = "No";
